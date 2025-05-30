@@ -21,16 +21,7 @@
             font-weight: 700; /* font-bold */
             color: #1e293b; /* Darker slate gray */
         }
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50%;
-            height: 4px;
-            background-color: #3b82f6; /* Blue accent */
-            border-radius: 9999px; /* rounded-full */
-        }
+        /* Removed the ::after pseudo-element that created the line */
         .nav-link {
             transition: color 0.3s ease, background-color 0.3s ease;
         }
@@ -192,58 +183,48 @@
     <section id="experience" class="py-16 px-4 bg-white rounded-lg shadow-md mx-auto my-8 max-w-6xl">
         <div class="container mx-auto">
             <h2 class="section-heading text-center">Work Experience</h2>
-            <div class="relative border-l-4 border-blue-300 pl-8 md:pl-12">
+            <div class="relative pl-8 md:pl-12">
                 <div class="mb-8 relative pb-8">
-                    <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 top-0 transform -translate-x-1/2"></div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-1">Senior Software Engineer</h3>
                     <p class="text-blue-600 text-lg mb-2">Tech Solutions Inc. | Jan 2022 - Present</p>
                     <ul class="list-disc text-gray-700 leading-relaxed">
                         <li class="mb-2 flex items-center justify-between">
                             <span>Led the development of a scalable microservices architecture, improving system performance by 30%.</span>
-                            <button class="elaborate-btn bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-3 rounded-full ml-4 transition duration-200">✨ Elaborate</button>
-                        </li>
+                            </li>
                         <li class="mb-2 flex items-center justify-between">
                             <span>Mentored junior developers and conducted code reviews, fostering a culture of high-quality code.</span>
-                            <button class="elaborate-btn bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-3 rounded-full ml-4 transition duration-200">✨ Elaborate</button>
-                        </li>
+                            </li>
                         <li class="mb-2 flex items-center justify-between">
                             <span>Collaborated with product teams to translate business requirements into technical specifications.</span>
-                            <button class="elaborate-btn bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-3 rounded-full ml-4 transition duration-200">✨ Elaborate</button>
-                        </li>
+                            </li>
                         <li class="mb-2 flex items-center justify-between">
                             <span>Implemented CI/CD pipelines, reducing deployment time by 50%.</span>
-                            <button class="elaborate-btn bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-3 rounded-full ml-4 transition duration-200">✨ Elaborate</button>
-                        </li>
+                            </li>
                     </ul>
                 </div>
                 <div class="mb-8 relative pb-8">
-                    <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 top-0 transform -translate-x-1/2"></div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-1">Software Developer</h3>
                     <p class="text-blue-600 text-lg mb-2">Innovate Corp. | Jun 2019 - Dec 2021</p>
                     <ul class="list-disc text-gray-700 leading-relaxed">
                         <li class="mb-2 flex items-center justify-between">
                             <span>Developed and maintained web applications using React and Node.js.</span>
-                            <button class="elaborate-btn bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-3 rounded-full ml-4 transition duration-200">✨ Elaborate</button>
-                        </li>
+                            </li>
                         <li class="mb-2 flex items-center justify-between">
                             <span>Contributed to database design and optimization for key features.</span>
-                            <button class="elaborate-btn bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-3 rounded-full ml-4 transition duration-200">✨ Elaborate</button>
-                        </li>
+                            </li>
                         <li class="mb-2 flex items-center justify-between">
                             <span>Participated in agile ceremonies, including sprint planning and daily stand-ups.</span>
-                            <button class="elaborate-btn bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-3 rounded-full ml-4 transition duration-200">✨ Elaborate</button>
-                        </li>
+                            </li>
                         <li class="mb-2 flex items-center justify-between">
                             <span>Assisted in debugging and troubleshooting production issues.</span>
-                            <button class="elaborate-btn bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold py-1 px-3 rounded-full ml-4 transition duration-200">✨ Elaborate</button>
-                        </li>
+                            </li>
                     </ul>
                 </div>
                 </div>
         </div>
     </section>
 
-    <div id="elaborateModal" class="modal hidden">
+    <!-- <div id="elaborateModal" class="modal hidden">
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <h3 class="text-2xl font-bold text-gray-800 mb-4">Elaborated Point</h3>
@@ -253,13 +234,13 @@
                 <p class="mt-2">Generating...</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <section id="projects" class="py-16 px-4 bg-gray-50 rounded-lg shadow-md mx-auto my-8 max-w-6xl">
         <div class="container mx-auto">
             <h2 class="section-heading text-center">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                <div class="bg-transparent rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
                     <img src="https://placehold.co/400x250/ffffff/000000?text=Project+1" alt="Project 1 Image" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Project Title One</h3>
@@ -277,7 +258,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                <div class="bg-transparent rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
                     <img src="https://placehold.co/400x250/ffffff/000000?text=Project+2" alt="Project 2 Image" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Project Title Two</h3>
@@ -295,7 +276,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                <div class="bg-transparent rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
                     <img src="https://placehold.co/400x250/ffffff/000000?text=Project+3" alt="Project 3 Image" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Project Title Three</h3>
